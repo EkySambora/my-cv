@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+.logo{
+    font-family: 'Anton', sans-serif;
+  }
+.logo a{
+    color: #333
+}
+.navbarMenu{
+    /* width: 100%; */
+    list-style: none;
+    font-family: 'Staatliches', cursive;
+}
+.navbarMenu li{
+    width: 50px;
+    margin-top: 20px;
+}
+.navbarMenu li a{
+    color: #333;
+}
+
+.navbarMenu li a:hover{
+    color: #00C9FF;
+    /*box-shadow: 1px 1px #00C9FF;*/
+    /*text-decoration: none;*/
+    border-bottom: 1px color #00C9FF !important;
+}
+
+#menu{
+    float: right;
+    display: flex;
+  }
+  menu{
+    display: none;
+    font-family: 'Staatliches', cursive;
+  
+    /*background: grey;*/
+    background: #00C9FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .logo{
+      text-align: center
+    }
+    #menu{
+      /* display: flex; */
+      width: 100%;
+      /* float: left; */
+      /*background: grey;*/
+      background: #00C9FF;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    #menu li{
+      width: 25%;
+      text-align: center;
+      /* background: #333; */
+      margin: 5px;
+    }
+    #menu li a:hover{
+      color:#fff;
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    #parentMenu{
+      display: none;
+    }
+    #menu{
+      display: inline;
+      width: 100%;
+    }
+    menu{
+      display: block;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #menu li {
+      width: 98%;
+      padding:10px;
+      background: #f1f2f6;
+    }
+    #menu li a{
+      display: block;
+  
+    }
+  
+    /*blog*/
+    .menuBlog{
+      display: block !important;
+      width: 800px;
+      border:none !important;
+    }
+    .menuBlog li{
+      width: 100% !important;
+      border-top: 1px solid #f5f6fa;
+    }
+    .menuBlog li:last-child{
+      border-bottom: 1px solid #f5f6fa;
+    }
+  
+  }
+  @media only screen and (max-width: 300px) {
+    #menu li {
+      width: 96%;
+      padding:10px;
+      background: #dfe4ea;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #menu li {
+      width: 97%;
+      padding:10px;
+      background: #dfe4ea;
+    }
+  }
+  
